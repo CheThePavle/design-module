@@ -1,0 +1,194 @@
+/* Общие стили */
+:root {
+    --bgColor: #7e4c4f;
+    --bgColorBlock: #f5f5f5;
+    --bgColorFooter: #e0e0e0;
+    --hoverColor: #323232;
+    --bgShadowColor: #d4a18a;
+    --textColor: white;
+    --navHoverColor: sienna;
+    --navFooterColor: #6c757d;
+}
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url("../font/Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url("../font/Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url("../font/Roboto-Regular.ttf");
+}
+body{
+    font-family: 'Roboto Regular';
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+main{
+    flex-grow: 1;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto Bold';
+}
+header, footer {
+    font-family: 'Roboto Medium';
+}
+img{
+    object-fit: cover;
+}
+
+/* Меню */
+.c_logo{
+    max-width: 150px;
+}
+.nav-link:hover{
+    color: var(--navHoverColor) !important;
+}
+
+/* Кнопки */
+.btn{
+    background-color: var(--bgColor);
+    border-color: var(--bgColor);
+    color: var(--textColor);
+    padding: 10px 20px;
+}
+.btn:hover{
+    color: var(--textColor);
+    background-color: var(--hoverColor);
+}
+.btn:focus{
+    border-color: var(--bgColor) !important;
+    box-shadow: 0 0 0 0.25rem var(--bgShadowColor) !important;
+}
+input:focus{
+    border-color: var(--bgColor) !important;
+    box-shadow: 0 0 0 0.25rem var(--bgShadowColor) !important;
+}
+select:focus{
+    border-color: var(--bgColor) !important;
+    box-shadow: 0 0 0 0.25rem var(--bgShadowColor) !important;
+}
+.form-check-input:checked{
+    background-color: var(--bgColor) !important;
+    border-color: var(--bgColor) !important;
+}
+
+/* Слайдер */
+.carousel-item > img{
+    height: 600px;
+}
+
+/* Фон для блока */
+.c_bg_gray{
+    background-color: var(--bgColorBlock);
+}
+
+/* Для блоков с преимуществами */
+.c_icon_plus{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 5px;
+}
+.c_bg_plus1, .c_bg_plus2, .c_bg_plus3{
+    opacity: 0.9;
+    transition: .3s all;
+}
+.c_bg_plus1{
+    background-color: #fcedda;
+}
+.c_bg_plus1:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    transition: .3s all;
+}
+.c_bg_plus2{
+    background-color: #f2fbcb;
+}
+.c_bg_plus2:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    transition: .3s all;
+}
+.c_bg_plus3{
+    background-color: #f7d8f9;
+}
+.c_bg_plus3:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    transition: .3s all;
+}
+
+/* Акции */
+.c_akcia:hover {
+    box-shadow:
+            1px 1px #f5f5f5,
+            2px 2px #f5f5f5,
+            3px 3px #f5f5f5,
+            4px 4px #f5f5f5,
+            5px 5px #f5f5f5,
+            6px 6px #f5f5f5,
+            7px 7px #f5f5f5;
+    transition: .4s all;
+    transform: translateX(-7px);
+}
+
+/* Footer */
+footer{
+    background-color: var(--bgColorFooter);
+}
+.c_tel_footer, .c_nav_footer > a {
+    color: var(--navFooterColor);
+}
+.c_nav_footer > a{
+    text-decoration: none;
+    margin-right: 10px;
+    transition: .3s all;
+}
+.c_nav_footer > a:hover{
+    margin-left: 5px;
+    color: var(--navHoverColor);
+    transition: .3s all;
+}
+
+/* Страница с поиском */
+.c_bg_title{
+    font-weight: bold;
+}
+.c_title{
+    font-weight: normal;
+}
+.result:hover{
+    box-shadow:
+            1px 1px #d5d5d5,
+            2px 2px #d5d5d5,
+            3px 3px #d5d5d5,
+            4px 4px #d5d5d5,
+            5px 5px #d5d5d5,
+            6px 6px #d5d5d5,
+            7px 7px #d5d5d5;
+    transition: .4s all;
+    transform: translateX(-7px);
+}
+
+/* Страница бронирования */
+.client{
+    cursor: pointer;
+    max-width: 70px;
+}
+.c_delete_client{
+    font-size: 30px;
+    padding: 5px;
+}
+
+/* ЛК */
+.c_title_lk{
+    position: relative;
+}
+.c_out_lk{
+    position: absolute;
+    top: 0;
+    right: 13px;
+}
