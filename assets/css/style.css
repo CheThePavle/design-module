@@ -192,3 +192,20 @@ footer{
     top: 0;
     right: 13px;
 }
+
+/* Анимация блоков преимуществ */
+.plus_card {
+    transform: perspective(800px) rotateY(20deg);
+    transition: .25s ease-in-out;
+}
+.plus_card:hover {
+    transform: rotateY(0);
+    cursor: pointer;
+}
+
+.bg_slider {
+    background-color: #ffe4b3;
+}
+.img_slide{
+    height: 500px !important;
+}
