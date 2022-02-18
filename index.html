@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная - RusHome</title>
+    <meta name="keywords" content="отель">
+    <meta name="description" content="Мы работаем, чтобы Вам было комфортно.">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+</head>
+<body>
+<!--HEADER-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a href="index.html">
+                            <img src="assets/img/logo.jpg" alt="logo" class="c_logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase" aria-current="page" href="#test-0-prom">Акции </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase" href="#test-0-search">Поиск </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase" href="booking.html">Бронирование номера </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase" href="login.html">Личный кабинет </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--SLIDER-->
+        <div class="bg_slider">
+            <div id="slider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-sm-12 col-lg-6 px-5 py-sm-3 py-lg-5">
+                                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                                </div>
+                                <div class="col-sm-12 col-lg-6 px-5 pb-sm-4 py-lg-5">
+                                    <img src="assets/img/slide1.jpg" class="d-block img-fluid img_slide" alt="slide1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-sm-12 col-lg-6 px-5 py-sm-3 py-lg-5">
+                                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                                </div>
+                                <div class="col-sm-12 col-lg-6 px-5 pb-sm-4 py-lg-5">
+                                    <img src="assets/img/slide2.jpg" class="d-block w-100 img-fluid img_slide" alt="slide2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-sm-12 col-lg-6 px-5 py-sm-3 py-lg-5">
+                                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                                </div>
+                                <div class="col-sm-12 col-lg-6 px-5 pb-sm-4 py-lg-5">
+                                    <img src="assets/img/slide3.jpg" class="d-block w-100 img-fluid img_slide" alt="slide3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="c_bg_gray">
+            <div class="container">
+                <div class="row pt-5 pb-5">
+                    <div class="col-12">
+                        <h2 class="text-center pb-4">Снижение стоимости</h2>
+                        <form class="row g-3 price_form">
+                            <div class="col-md-12">
+                                <label for="city" class="form-label">Город отеля</label>
+                                <select id="city" class="form-select" >
+                                    <option selected>Город1</option>
+                                    <option>Город2</option>
+                                    <option>Город3</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="category" class="form-label">Категория номера</label>
+                                <select id="category" class="form-select">
+                                    <option selected>Категория1</option>
+                                    <option>Категория2</option>
+                                    <option>Категория3</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="days" class="form-label">Количество дней проживания</label>
+                                <input type="number" min="0" value="0" class="form-control" id="days">
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Количество людей</h5>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success bar_people" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                        2
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Стоимость</h5>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger bar_price" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                                        5 000 руб.
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="container">
+                <div class="row pt-5 pb-5">
+                    <div class="col-12">
+                        <h2 class="text-center pb-4">Наши преимущества</h2>
+                        <div class="row">
+                            <div class="col-xl-4 col-md-12 pb-sm-3">
+                                <div class="card plus_card">
+                                    <div class="card-body c_bg_plus1 p-4">
+                                        <div class="c_icon_plus">
+                                            <i class="fas fa-check-square"></i>
+                                        </div>
+                                        <h5 class="card-title text-center">Преимущество 1</h5>
+                                        <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-12 pb-sm-3">
+                                <div class="card plus_card">
+                                    <div class="card-body c_bg_plus2 p-4">
+                                        <div class="c_icon_plus">
+                                            <i class="fas fa-check-square"></i>
+                                        </div>                                    <h5 class="card-title text-center">Преимущество 2</h5>
+                                        <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-12">
+                                <div class="card plus_card">
+                                    <div class="card-body c_bg_plus3 p-4">
+                                        <div class="c_icon_plus">
+                                            <i class="fas fa-check-square"></i>
+                                        </div>                                    <h5 class="card-title text-center">Преимущество 3</h5>
+                                        <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c_bg_gray" id="test-0-search">
+            <div class="container">
+                <div class="row pt-5 pb-5">
+                    <div class="col-12">
+                        <h2 class="text-center pb-4">Поиск гостиниц</h2>
+                        <form class="row g-3" action="search.html">
+                            <div class="col-md-12">
+                                <label for="citySearch" class="form-label">Город </label>
+                                <select id="citySearch" class="form-select">
+                                    <option selected>Город1</option>
+                                    <option>Город2</option>
+                                    <option>Город3</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="date1" class="form-label">Дата заселения </label>
+                                <input type="date" class="form-control" id="date1">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="date2" class="form-label">Дата выселения </label>
+                                <input type="date" class="form-control" id="date2">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="seats" class="form-label">Вместимость </label>
+                                <select id="seats" class="form-select">
+                                    <option selected>50</option>
+                                    <option>100</option>
+                                    <option>200</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="comfort" class="form-label">Комфортность </label>
+                                <select id="comfort" class="form-select">
+                                    <option selected>B</option>
+                                    <option>A</option>
+                                    <option>S</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="people" class="form-label">Количество человек</label>
+                                <input type="number" value="0" min="0" class="form-control" id="people">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="mini_people" class="form-label">Из них количество детей</label>
+                                <input type="number" value="0" min="0" class="form-control" id="mini_people">
+                            </div>
+                            <div class="col-md-12">
+                                <input class="form-check-input" type="checkbox" value="" id="getDocuments">
+                                <label class="form-check-label" for="getDocuments">
+                                    Нужны отчетные документы
+                                </label>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn text-uppercase d-block mx-auto">Найти</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="test-0-prom">
+            <div class="container">
+                <div class="row pt-5 pb-5">
+                    <div class="col-12">
+                        <h2 class="text-center pb-4">Акции</h2>
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6 col-sm-12 pb-sm-3">
+                                <div class="card c_akcia">
+                                    <img src="assets/img/akcia.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Акция 1</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn text-uppercase">Посмотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-sm-12 pb-sm-3">
+                                <div class="card c_akcia">
+                                    <img src="assets/img/akcia.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Акция 2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn text-uppercase">Посмотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-sm-12 pb-sm-3">
+                                <div class="card c_akcia">
+                                    <img src="assets/img/akcia.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Акция 3</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn text-uppercase">Посмотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-sm-12 pb-sm-3">
+                                <div class="card c_akcia">
+                                    <img src="assets/img/akcia.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Акция 4</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn text-uppercase">Посмотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c_bg_gray" id="test-0-feedback">
+            <div class="container">
+                <div class="row pt-5 pb-5">
+                    <div class="col-12">
+                        <h2 class="text-center pb-4">Подписаться на закрытые акции</h2>
+                        <form class="row g-3">
+                            <div class="form-floating col-8 mx-auto">
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn text-uppercase d-block mx-auto">Подписаться</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row pt-5 pb-5 text-center">
+                <div class="col-12 c_tel_footer">
+                    Телефон - 8(800)300-25-11
+                </div>
+                <div class="col-12 mt-3">
+                    <div class="c_nav_footer">
+                        <a href="#">Страница 1</a>
+                        <a href="#">Страница 2</a>
+                        <a href="#">Страница 3</a>
+                        <a href="#">Страница 4</a>
+                        <a href="#">Страница 5</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
