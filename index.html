@@ -15,12 +15,16 @@
 <body>
 <!--HEADER-->
     <header>
+        <div class="top_header py-3">
+            Мы работаем, чтобы Вам было комфортно!
+        </div>
+
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
                         <a href="index.html">
-                            <img src="assets/img/logo.jpg" alt="logo" class="c_logo">
+                            <div class="c_logo"></div>
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -113,7 +117,7 @@
                         <form class="row g-3 price_form">
                             <div class="col-md-12">
                                 <label for="city" class="form-label">Город отеля</label>
-                                <select id="city" class="form-select" >
+                                <select onchange="changePrice()" id="city" class="form-select" >
                                     <option selected>Город1</option>
                                     <option>Город2</option>
                                     <option>Город3</option>
@@ -121,7 +125,7 @@
                             </div>
                             <div class="col-md-6">
                                 <label for="category" class="form-label">Категория номера</label>
-                                <select id="category" class="form-select">
+                                <select onchange="changePrice()" id="category" class="form-select">
                                     <option selected>Категория1</option>
                                     <option>Категория2</option>
                                     <option>Категория3</option>
@@ -129,12 +133,12 @@
                             </div>
                             <div class="col-md-6">
                                 <label for="days" class="form-label">Количество дней проживания</label>
-                                <input type="number" min="0" value="0" class="form-control" id="days">
+                                <input onchange="changePrice()" onkeyup="changePrice()" type="number" min="0" value="0" class="form-control" id="days">
                             </div>
                             <div class="col-md-6">
                                 <h5>Количество людей</h5>
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success bar_people" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                    <div id="bar_people" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
                                         2
                                     </div>
                                 </div>
@@ -142,7 +146,7 @@
                             <div class="col-md-6">
                                 <h5>Стоимость</h5>
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger bar_price" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                                    <div id="bar_price" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
                                         5 000 руб.
                                     </div>
                                 </div>
@@ -159,23 +163,30 @@
                     <div class="col-12">
                         <h2 class="text-center pb-4">Наши преимущества</h2>
                         <div class="row">
-                            <div class="col-xl-4 col-md-12 pb-sm-3">
+                            <div class="col-xl-4 col-md-12 pb-sm-5 pb-xl-3">
                                 <div class="card plus_card">
                                     <div class="card-body c_bg_plus1 p-4">
-                                        <div class="c_icon_plus">
-                                            <i class="fas fa-check-square"></i>
+                                        <div class="c_plus">
+                                            <img src="assets/img/plus1.png" alt="plus1">
                                         </div>
+<!--                                        <div class="c_icon_plus">-->
+<!--                                            <i class="fas fa-check-square"></i>-->
+<!--                                        </div>-->
                                         <h5 class="card-title text-center">Преимущество 1</h5>
                                         <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-md-12 pb-sm-3">
+                            <div class="col-xl-4 col-md-12 pb-sm-5 pb-xl-3">
                                 <div class="card plus_card">
                                     <div class="card-body c_bg_plus2 p-4">
-                                        <div class="c_icon_plus">
-                                            <i class="fas fa-check-square"></i>
-                                        </div>                                    <h5 class="card-title text-center">Преимущество 2</h5>
+                                        <div class="c_plus">
+                                            <img src="assets/img/plus2.png" alt="plus2">
+                                        </div>
+<!--                                        <div class="c_icon_plus">-->
+<!--                                            <i class="fas fa-check-square"></i>-->
+<!--                                        </div>                                    -->
+                                        <h5 class="card-title text-center">Преимущество 2</h5>
                                         <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
                                     </div>
                                 </div>
@@ -183,9 +194,13 @@
                             <div class="col-xl-4 col-md-12">
                                 <div class="card plus_card">
                                     <div class="card-body c_bg_plus3 p-4">
-                                        <div class="c_icon_plus">
-                                            <i class="fas fa-check-square"></i>
-                                        </div>                                    <h5 class="card-title text-center">Преимущество 3</h5>
+                                        <div class="c_plus">
+                                            <img src="assets/img/plus3.png" alt="plus3">
+                                        </div>
+<!--                                        <div class="c_icon_plus">-->
+<!--                                            <i class="fas fa-check-square"></i>-->
+<!--                                        </div>                                    -->
+                                        <h5 class="card-title text-center">Преимущество 3</h5>
                                         <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
                                     </div>
                                 </div>
@@ -349,7 +364,6 @@
     </footer>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/jquery.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
