@@ -1,5 +1,5 @@
 /*:root {
---bgColor: #7e4c4f;
+--bgColor: #7e4e4e;
 }*/
 /* Общие стили */
 @font-face {
@@ -33,18 +33,24 @@ img{
     object-fit: cover;
 }
 .bg-orange{
-    background-color: #eb9800;
+    background-color: #dc8c0c;
 }
 
 /* Меню */
 .nav-link, .c_link_color{
-    color: #7e4c4f !important;
+    color: #7e4e4e !important;
 }
 .nav-link:hover{
-    color: #de982c !important;
+    color: #dc8c0c !important;
 }
 .c_link_color:hover{
-    color: #de982c !important;
+    color: #dc8c0c !important;
+}
+.c_nav_active{
+    color: #dc8c0c !important;
+}
+.c_nav_active:hover{
+    color: #7e4e4e !important;
 }
 
 /* Кнопки */
@@ -53,13 +59,13 @@ img{
     overflow: hidden;
     border: none;
     color: white;
-    background-color: #7e4c4f;
+    background-color: #7e4e4e;
     padding: 10px 20px;
     box-shadow: inset 0 0 20px 1px rgb(72, 72, 72);
     transition: .2s;
 }
 .btn:hover {
-    color: #7e4c4f;
+    color: #7e4e4e;
     z-index: 2;
     border-radius: 30px;
 }
@@ -73,7 +79,7 @@ img{
     left: 0;
     background: white;
     border-radius: 30px;
-    border: 3px solid #7e4c4f;
+    border: 3px solid #7e4e4e;
     box-shadow: inset 0px 0px 15px 1px rgba(0, 0, 0, 0.5);
     transition: .2s;
     z-index: -1;
@@ -83,20 +89,20 @@ img{
 }
 
 .btn:focus{
-    border-color: #7e4c4f !important;
+    border-color: #7e4e4e !important;
     box-shadow: 0 0 0 0.25rem #d4a18a !important;
 }
 input:focus{
-    border-color: #7e4c4f !important;
+    border-color: #7e4e4e !important;
     box-shadow: 0 0 0 0.25rem #d4a18a !important;
 }
 select:focus{
-    border-color: #7e4c4f !important;
+    border-color: #7e4e4e !important;
     box-shadow: 0 0 0 0.25rem #d4a18a !important;
 }
 .form-check-input:checked{
-    background-color: #7e4c4f !important;
-    border-color: #7e4c4f !important;
+    background-color: #7e4e4e !important;
+    border-color: #7e4e4e !important;
 }
 
 /* Слайдер */
@@ -135,7 +141,7 @@ select:focus{
     transition: .3s all;
 }
 .c_bg_plus2{
-    background-color: #f2fbcb;
+    background-color: #f0fbbb;
 }
 .c_bg_plus2:hover{
     transform: scale(1.1);
@@ -143,7 +149,7 @@ select:focus{
     transition: .3s all;
 }
 .c_bg_plus3{
-    background-color: #f7d8f9;
+    background-color: #f0d0f0;
 }
 .c_bg_plus3:hover{
     transform: scale(1.1);
@@ -234,7 +240,7 @@ footer{
 }
 
 .bg_slider {
-    background-color: #ffe4b3;
+    background-color: #fee1ab;
 }
 .img_slide{
     height: 500px !important;
@@ -277,4 +283,57 @@ footer{
     width: 150px;
     height: 120px;
     transition: .5s all;
+}
+
+
+/* Выбор места с js */
+.c_block_table{
+    display: flex;
+    justify-content: center;
+}
+.c_seat_table td {
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    text-align: center;
+}
+.c_td_empty{
+    border: none !important;
+    cursor: inherit !important;
+}
+@keyframes selectTd {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.c_select_td{
+    background-color: #dc8c0c;
+    animation: selectTd .5s;
+    transition: .4s all;
+    color: white;
+}
+@keyframes noSelectTd {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+.c_no_select_td{
+    background-color: unset;
+    animation: noSelectTd .2s;
+    transition: .4s all;
+}
+
+/* Бронирование */
+.bg-delete-client{
+    background-color: #dc8c0c;
+}
+.bg-add-client{
+    background-color: #7e4e4e;
 }
